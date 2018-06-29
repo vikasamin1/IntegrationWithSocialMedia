@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout_from_google"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_revoke_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_revoke_access"
+        android:visibility="gone" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/getDataFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Show Facebook Data"
+        android:visibility="gone"
+
+        />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/text_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TableRow
+        android:layout_height="10dp"
+        android:layout_width="match_parent"
+        />
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/tw_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/link_login"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/signin"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/logoutLinkdin"
+        android:layout_width="180dp"
+        android:background="@drawable/logout"
+        android:layout_height="40dp" />
+</LinearLayout>
+        <ImageView
+            android:id="@+id/LinkPic"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="100dp"
+            />
+        <TextView
+            android:id="@+id/useremail"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:text="user_email"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/username"
+            android:text="username"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

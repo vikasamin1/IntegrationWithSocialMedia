@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Social Media Login</string>
+    <string name="btn_logout_from_google">Logout</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="loading">Loading</string>
+    <string name="facebook_app_id">1054069271427582</string>
+   <!-- <string name="facebook_app_id">383930455461455</string>-->
+    <string name="fb_login_protocol_scheme">fb383930455461455</string>
+
+    <string name="action_sign_in_with_instagram">Log in With Instagram</string>
+
+    <string name="twitter_key" android:name="com.twitter.sdk.android.CONSUMER_KEY">0QSPaGwgWcgs5dDAKrutUbQKh</string>
+    <string name="twitter_secret" android:name="com.twitter.sdk.android.CONSUMER_SECRET">BOm6vVPKJFuUsPomeeQjD6KZsB6OxoPWzhrSktGkXlzZg5fc1W</string>
+    <string name="name">fb_main</string>
+</resources>
